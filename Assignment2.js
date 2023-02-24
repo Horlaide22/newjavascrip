@@ -82,15 +82,19 @@ console.log(stutter("enthusiastic"))
 console.log(stutter("outstanding"))
 
 
-function intToString(n){
-    let number= string(n)
-    return number
+
+function intToString(number){
+    
+    let result = String(number)
+    return result
 }
 console.log(intToString(4))
 
-function stringToInt(valueinString){
-    let response= number(valueinString)
-    return response
+
+function stringToInt(valueInString){
+    
+    let result = Number(valueInString)   
+    return result
 }
 console.log(stringToInt("4"))
 
