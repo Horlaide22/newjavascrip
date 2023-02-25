@@ -57,8 +57,16 @@ console.log(makesTen(9,10))
 console.log(makesTen(9,9))
 console.log(makesTen(1,10))
 
-
-
+function comp(string1 , string2) {
+    if (string1 === string2){
+        return true
+    }else{
+        return false
+    }
+}
+console.log(comp("AB","CD"))
+console.log(comp("ABC","DE"))
+console.log(comp("hello","edabit"))
 
 
 
