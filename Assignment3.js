@@ -46,6 +46,17 @@ console.log(profitableGamble(0.2, 50, 9))
 console.log(profitableGamble(0.9, 1, 2))
 console.log(profitableGamble(0,9, 3, 2))
 
+function makesTen(a,b){
+    if ((a+b)===10 ||(a,b=== 10)){
+        return true
+    }else{
+        return false
+    }
+}
+console.log(makesTen(9,10))
+console.log(makesTen(9,9))
+console.log(makesTen(1,10))
+
 
 
 
