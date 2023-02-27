@@ -68,7 +68,63 @@ console.log(comp("AB","CD"))
 console.log(comp("ABC","DE"))
 console.log(comp("hello","edabit"))
 
+function acceptIntoMovies(x , y){
+    let acceptable = true  
+    if(x <=15 || y === acceptable ){
+        return true
+    }else{
+        return false
+    }
+}
+console.log(acceptIntoMovies(14,true))
+console.log(acceptIntoMovies(14, false))
+console.log(acceptIntoMovies(16,false))
 
+function oddOrEven(string){
+    let str= string.length
+    if(str % 2 === 0){
+        return true 
+    }else{
+        return false
+    }
+}
+console.log(oddOrEven("apples"))
+console.log(oddOrEven("pears"))
+
+function isPlural(x){
+    if ((x.length-1) === "s"){
+        return true
+    }else{
+        return false
+    }
+}
+    
+    
+    console.log(isPlural("changes"))
+    console.log(isPlural("change"))
+    console.log(isPlural("dude"))
+    console.log(isPlural("magic"))
+
+
+// function fifth(arguments)
+//     if (arguments < 5 ){
+//         return "not enough agruments"
+//     }else{
+//         return typeof(arguments)
+//     }
+//     console.log(fifth(1,2,3,4,5))
+//     console.log(fifth("a",2,3,true,"five"))
+//     console.log(fifth())
+
+    function  days  (year, month)  {
+        return new Date(year, month, 0).getDate()
+    }
+    
+    
+    console.log(days(2,2018))
+    console.log(days(4,654))
+    console.log(days(2,200)) 
+    console.log(days(2,1000))  
 
 
 
