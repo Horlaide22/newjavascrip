@@ -91,8 +91,9 @@ function oddOrEven(string){
 console.log(oddOrEven("apples"))
 console.log(oddOrEven("pears"))
 
-function isPlural(x){
-    if ((x.length-1) === "s"){
+function isPlural(text){
+    let newText = text.charAt(text.length-1)
+    if (newText === "s"){
         return true
     }else{
         return false
@@ -101,11 +102,22 @@ function isPlural(x){
     
     
     console.log(isPlural("changes"))
-    console.log(isPlural("change"))
-    console.log(isPlural("dude"))
+    console.log(isPlural("changes"))
+    console.log(isPlural("dudes"))
     console.log(isPlural("magic"))
 
-
+ function isLastCharacterN(text){
+        let textOne =  text.charAt(text.length-1)
+        if (textOne === "n"){
+            return true
+        }else{
+            return false
+        }
+ }
+ console.log(isLastCharacterN("Aiden"))
+ console.log(isLastCharacterN("Piet"))
+ console.log(isLastCharacterN("Bert"))
+ console.log(isLastCharacterN("Dean"))
 // function fifth(arguments)
 //     if (arguments < 5 ){
 //         return "not enough agruments"
@@ -116,7 +128,7 @@ function isPlural(x){
 //     console.log(fifth("a",2,3,true,"five"))
 //     console.log(fifth())
 
-    function  days  (year, month)  {
+    function  days(year, month)  {
         return new Date(year, month, 0).getDate()
     }
     
@@ -125,6 +137,60 @@ function isPlural(x){
     console.log(days(4,654))
     console.log(days(2,200)) 
     console.log(days(2,1000))  
+
+    function  firstLast(text){
+        let textOne = text.charAt(0)
+        let newText = text.charAt(text.length-1)
+        let output = "\"" + textOne + newText + "\"" 
+        
+        return output
+        
+      }
+      console.log(firstLast("ganesh"))
+      console.log(firstLast("kali"))
+      console.log(firstLast("shiva"))
+      console.log(firstLast("salman"))
+      console.log(firstLast("adeyemi"))
+
+      function newWord(word){
+        let wordOne= "\"" + word.substring(1) + "\""
+            return wordOne
+      }
+    
+      console.log(newWord("apple"))
+      console.log(newWord("cherry"))
+      console.log(newWord("plum"))
+
+
+      function checkEnding(str1,str2){
+        if (str2.lastIndexOf(str1) === str2.length - str1.length){
+          return true 
+        }else {
+          return false
+        }
+      }
+      console.log(checkEnding("abc","bc"))
+      console.log(checkEnding("abc","d"))
+      console.log(checkEnding("samurai","zi"))
+      console.log(checkEnding("convention","tio"))
+      
+      
+    
+    // function wumbo(statement){
+    //     let output = statement.toUpperCase
+    //     return output
+    // }    
+    // console.log(wumbo("I LOVE "))
+
+    // function moodToday(sentence){
+    //     let mood = "today , I am feeling happy" + statement
+    //     return mood 
+    //     if(moodToday === ()){
+    //     return "today,  i"
+    //     }
+    // }
+
+
 
 
 
