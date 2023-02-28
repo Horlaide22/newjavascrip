@@ -173,6 +173,17 @@ function isPlural(text){
       console.log(checkEnding("abc","d"))
       console.log(checkEnding("samurai","zi"))
       console.log(checkEnding("convention","tio"))
+
+      function getMiddle(str){
+        let output= "\"" + str.substr(str.length -1 >>> 1, (~str.length & 1) +1) + "\""
+        return output
+      }
+      
+      console.log(getMiddle("middle"))
+      console.log(getMiddle("A"))
+      console.log(getMiddle('testing'))
+      console.log(getMiddle("test"))
+      
       
       
     
