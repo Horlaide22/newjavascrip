@@ -185,7 +185,16 @@ function isPlural(text){
       console.log(getMiddle("test"))
       
       
+      function reverseString(str) {
+        let output = "\"" + str.split("").reverse().join("") + "\""
+          return output
+      }
+      console.log(reverseString("Hello World"))
+      console.log(reverseString("The quick brown fox"))
+      console.log(reverseString("Edabit is really helpful"))
       
+      
+
     
     // function wumbo(statement){
     //     let output = statement.toUpperCase
