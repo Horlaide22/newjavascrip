@@ -187,6 +187,18 @@ function isPlural(text){
         let output= "\"" + str.substr(str.length -1 >>> 1, (~str.length & 1) +1) + "\""
         return output
       }
+
+    //   function getMiddle(word) {
+    //     if (word.length % 2 != 0) {
+    //         let middleCharacterIndex = Math.floor(word.length / 2)
+    //         let theMiddleCharacter =  `${word.charAt(middleCharacterIndex)}}`
+    //         return theMiddleCharacter
+    //     } else {
+    //         let middleCharacterIndex = Math.floor(word.length / 2)
+    //         let theMiddleCharacter =  `${word.charAt(middleCharacterIndex-1)}${word.charAt(middleCharacterIndex)}`
+    //         return theMiddleCharacter
+    //     }
+    // }
       
       console.log(getMiddle("middle"))
       console.log(getMiddle("A"))
